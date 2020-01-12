@@ -1,0 +1,148 @@
+
+body{
+    text-align: center;
+    background-color: #0d0d3ad4;
+    height:95%;
+    width: 100%;
+    
+}
+
+body.rtl{
+    direction: rtl;
+}
+
+table{
+    border: 1px black solid;
+    background-color: rgba(255, 228, 196, 0.746);
+    border-spacing: 0;
+}
+
+select{
+    max-width:20%;
+}
+
+h1{
+    text-align: center;
+}
+
+td{
+    padding: 20px;
+    text-align: center;
+    border-left:0;
+    border-right:0;
+    border-bottom: 1px black solid;
+    border-spacing: 0;
+}
+
+
+.bg {
+    width: 100%;
+    height: 100%;
+    position:fixed;
+    background-color: rgba(0, 0, 0, 0.692);
+    display:none;
+}
+
+
+.popup{
+    border: 1px solid gray;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    position:absolute;
+    background: #cfb9f7;
+    display:none;
+    margin: auto;
+    bottom:0;top:0;right:0;left:0;
+    width:400px;
+    height:320px;
+}
+
+h1{
+    color: whitesmoke;
+    text-shadow: -1px 7px 3px black;
+}
+
+
+img{
+    display: block;
+    margin: auto;
+    margin-bottom: 5px;
+    max-width:25%;
+}
+span{
+    margin-left: 3px;
+}
+
+button:focus{
+    outline: 0;
+
+}
+
+
+.rate{
+    text-align: center;
+    margin-top:5px;
+}
+
+
+.add-book{
+    padding: 10px;
+    margin: 5px 0;
+    box-shadow: inset -1px 0px 20px 12px black;
+}
+
+
+.popup2{
+    border: 1px solid gray;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    background: rgb(74, 62, 50);
+    display: none;
+    margin: auto;
+    right: 0;
+    left: 0;
+    width: 35%;
+    height: 35%;
+    bottom: 40%;
+}
+
+input{
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.popup2 button{
+    display: block;
+    margin: auto;
+}
+
+.head-table{
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    background-color: #201d22e6 !important;
+}
+
+.btn-next-page{
+    border-color: none;
+    background-color: #9ea3a89c;
+    border-style: none;
+    width: 8%;
+    border-bottom-left-radius: 101%;
+    border-bottom-right-radius: 102%;
+    border-top: 1px #ffffff7a solid;
+    color: white;
+}
+
+.btn-next-page:hover{
+    background-color:#454d55c0;
+    transition: .2s;
+}
+
+
+
+
+

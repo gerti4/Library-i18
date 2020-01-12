@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Book Shop</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body onload="onInit()">
+    <div class="bg"></div>
+    <div class="popup">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque eum, ullam architecto quibusdam, rerum
+            blanditiis, reprehenderit veritatis quisquam omnis quam distinctio hic eos magni iusto sapiente minus qui
+            dolorem nostrum.</p>
+        <img src="">
+        <div class="rate"></div>
+        <button onclick="onFinishReading()" data-trans="close">Close</button>
+
+    </div>
+
+    <h1 data-trans="headTitle">Book shop</h1>
+    <select class="custom-select mt-4" onchange="onSetLang(this.value)">
+        <option value="en">English</option>
+        <option value="ger">German</option>
+        <option value="heb">עברית</option>
+    </select>
+    
+    <table class="table table-dark table-striped table-hover mt-4 mb-0">
+        <tbody>
+        </tbody>
+    </table>
+    <div class="d-flex flex-row justify-content-around">
+        <button class="btn-next-page d-block" data-nav="-1" onclick="onNextPage(this)">«</button>
+        <button class="btn-next-page d-block" data-nav="1" onclick="onNextPage(this)">»</button>
+    </div>
+
+    <button class="add-book btn btn-primary btn-lg mt-3" data-trans="addNewBook" onclick="readAndAddNewBook()">Add new
+        book</button>
+
+    <div class="popup2">
+        <div class="d-flex flex-column">
+            <input class="name" type="text" data-trans="placeholderName" placeholder="enter book name">
+            <input class="price" type="text" data-trans="placeholderPrice" placeholder="enter book price">
+            <input class="url" type="text" data-trans="placeholderUrl" placeholder="enter url image">
+            <button class="btn btn-dark" onclick="onAddBook()" data-trans="add">Add</button>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="js/i18n-service.js"></script>
+    <script src="js/book-service.js"></script>
+    <script src="js/book-controller.js"></script>
+</body>
+
+</html>
